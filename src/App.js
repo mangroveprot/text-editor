@@ -1,20 +1,13 @@
 import React from 'react';
-import Analytics from './components/Analytics';
-import Cards from './components/Cards';
-import Footer from './components/Footer';
-import Hero from './components/Hero';
-import Navbar from './components/Navbar';
-import Newsletter from './components/Newsletter';
+import TextEditor from './components/TextEditor';
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <Hero />
-      <Analytics />
-      <Newsletter />
-      <Cards />
-      <Footer />
+    <div className="flex justify-center items-start h-screen">
+      <div className="w-full sm:w-3/4 md:w-1/2 lg:w-1/3 xl:w-1/4 mx-4 text-center">
+        <h1 className="text-2xl font-bold">Text-Editor</h1>
+        <TextEditor />
+      </div>
     </div>
   );
 }
